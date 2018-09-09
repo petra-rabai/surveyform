@@ -1,0 +1,22 @@
+<!--This is a Free Code Camp project - Survey Form page - HTML file-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="surveyform.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Software Developer's Survey Form</h1>
+        <p id="description"></p>
+        <form id="survey-form" action="submit">
+            <label id="name-label" for="name">Name: </label>
+            <input id="name" type="text" required placeholder="Please enter your name.">
+            <label id="email-label" for="email">E-mail: </label>
+            <input id="email" type="email" required placeholder="Please enter your e-mail address.">
+            <label id="number-label" for="number">How many years do you work in Software Development?</label>
+            <input id="number" type="number" min="1" max="99" placeholder="Please add a naumber.">
+            <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
