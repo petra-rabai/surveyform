@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1 id="title">Software Developer's Survey Form</h1>
-        <p id="description"></p>
+        <p id="description">Ask Software developer with your experience.</p>
         <form id="survey-form" action="submit">
             <label id="name-label" for="name">Name: </label>
             <input id="name" type="text" required placeholder="Please enter your name.">
@@ -16,6 +16,13 @@
             <input id="email" type="email" required placeholder="Please enter your e-mail address.">
             <label id="number-label" for="number">How many years do you work in Software Development?</label>
             <input id="number" type="number" min="1" max="99" placeholder="Please add a naumber.">
+            <label for="list">Which is your favorite programming language?</label>
+            <select name="list" id="dropdown">
+                <option value="csharp">C#</option>
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="swift">Swift</option>
+            </select>
             <button id="submit">Submit</button>
         </form>
     </body>
