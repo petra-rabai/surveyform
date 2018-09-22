@@ -1,1 +1,10 @@
 /*This is a Free Code Camp project - Survey Form page - CSS file*/
+body {
+    background-color: coral;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 55px;
+}

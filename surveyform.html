@@ -3,7 +3,9 @@
 <html>
     <head>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="surveyform.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <title>Survey Form</title>
     </head>
     <body>
@@ -23,8 +25,23 @@
                 <option value="c">C</option>
                 <option value="swift">Swift</option>
             </select>
-            
-            <button id="submit">Submit</button>
+            <fieldset>
+                <legend>What is your favorite IDE?</legend>
+                <input type="checkbox" name="ide" value="Visual Studio">Visual Studio <br>
+                <input type="checkbox" name="ide" value="Visual Studio Code">Visual Studio Code <br>
+                <input type="checkbox" name="ide" value="Xcode">Xcode <br>
+                <input type="checkbox" name="ide" value="Eclipse">Eclipse <br>
+            </fieldset>
+            <fieldset>
+                <legend>Do you have a non-profit project?</legend>
+                <input type="radio" name="project" value="Yes">Yes <br>
+                <input type="radio" name="project" value="No">No <br>
+            </fieldset>
+            <fieldset>
+                <legend>Comments: </legend>
+                <textarea name="Comment" id="comments" cols="30" rows="10"></textarea>
+            </fieldset>
+            <button class="btn btn-info" id="submit">Submit</button>
         </form>
     </body>
 </html>
